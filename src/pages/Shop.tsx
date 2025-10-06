@@ -8,44 +8,44 @@ import bagImage from "@/assets/product-bag.jpg";
 const products = [
   {
     id: 1,
-    name: "Classic Leather Belt",
+    name: "Cinturón de Cuero Clásico",
     price: "$89",
-    category: "Belts",
+    category: "Cinturones",
     image: beltImage,
   },
   {
     id: 2,
-    name: "Premium Bifold Wallet",
+    name: "Cartera Premium Bifold",
     price: "$75",
-    category: "Wallets",
+    category: "Carteras",
     image: walletImage,
   },
   {
     id: 3,
-    name: "Messenger Bag",
+    name: "Bolso Mensajero",
     price: "$199",
-    category: "Bags",
+    category: "Bolsos",
     image: bagImage,
   },
   {
     id: 4,
-    name: "Western Style Belt",
+    name: "Cinturón Estilo Western",
     price: "$95",
-    category: "Belts",
+    category: "Cinturones",
     image: beltImage,
   },
   {
     id: 5,
-    name: "Card Holder Wallet",
+    name: "Tarjetero de Cuero",
     price: "$59",
-    category: "Wallets",
+    category: "Carteras",
     image: walletImage,
   },
   {
     id: 6,
-    name: "Leather Satchel",
+    name: "Morral de Cuero",
     price: "$249",
-    category: "Bags",
+    category: "Bolsos",
     image: bagImage,
   },
 ];
@@ -60,10 +60,10 @@ const Shop = () => {
         <section className="bg-muted py-16 px-4 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-7xl text-center">
             <h1 className="font-serif text-4xl md:text-5xl font-bold text-foreground mb-4">
-              Our Collection
+              Nuestra Colección
             </h1>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Discover our handcrafted leather goods, each piece made with precision and care
+              Descubre nuestros artículos de cuero hechos a mano, cada pieza hecha con precisión y cuidado
             </p>
           </div>
         </section>

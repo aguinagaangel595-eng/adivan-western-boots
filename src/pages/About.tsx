@@ -12,10 +12,10 @@ const About = () => {
         <section className="bg-muted py-20 px-4 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-4xl text-center">
             <h1 className="font-serif text-4xl md:text-6xl font-bold text-foreground mb-6">
-              Our Story
+              Nuestra Historia
             </h1>
             <p className="text-xl text-muted-foreground">
-              Where Western tradition meets modern craftsmanship
+              Donde la tradición occidental se encuentra con la artesanía moderna
             </p>
           </div>
         </section>
@@ -25,23 +25,23 @@ const About = () => {
           <div className="mx-auto max-w-4xl">
             <div className="prose prose-lg max-w-none">
               <p className="text-lg text-foreground leading-relaxed mb-6">
-                ADIVAN was born from a passion for authentic leather craftsmanship and a deep respect 
-                for Western traditions. Each piece we create tells a story—a story of dedication, 
-                quality, and the timeless appeal of genuine leather goods.
+                ADIVAN nació de una pasión por la artesanía auténtica del cuero y un profundo respeto 
+                por las tradiciones occidentales. Cada pieza que creamos cuenta una historia—una historia de dedicación, 
+                calidad y el atractivo atemporal de los artículos de cuero genuino.
               </p>
               
               <p className="text-lg text-foreground leading-relaxed mb-6">
-                Our journey began in a small workshop where traditional leatherworking techniques 
-                met modern design sensibilities. We believe that every belt, wallet, and bag should 
-                not only serve its purpose but also be a testament to the artisan's skill and the 
-                material's natural beauty.
+                Nuestro viaje comenzó en un pequeño taller donde las técnicas tradicionales de trabajo del cuero 
+                se encontraron con sensibilidades de diseño moderno. Creemos que cada cinturón, cartera y bolso debe 
+                no solo cumplir su propósito sino también ser un testimonio de la habilidad del artesano y la 
+                belleza natural del material.
               </p>
 
               <p className="text-lg text-foreground leading-relaxed">
-                Today, ADIVAN stands as a symbol of quality and authenticity. We source only the 
-                finest leather and employ time-honored techniques to create products that age 
-                beautifully and last for generations. This is leather craftsmanship at its finest—
-                where every stitch matters, and every detail counts.
+                Hoy, ADIVAN se erige como un símbolo de calidad y autenticidad. Obtenemos solo el 
+                cuero más fino y empleamos técnicas consagradas para crear productos que envejecen 
+                bellamente y duran por generaciones. Esta es la artesanía del cuero en su máxima expresión—
+                donde cada puntada importa y cada detalle cuenta.
               </p>
             </div>
 
@@ -51,9 +51,9 @@ const About = () => {
                 <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-primary/10 mb-4">
                   <Heart className="h-8 w-8 text-primary" />
                 </div>
-                <h3 className="font-serif text-xl font-semibold mb-2">Passion</h3>
+                <h3 className="font-serif text-xl font-semibold mb-2">Pasión</h3>
                 <p className="text-muted-foreground">
-                  Every piece is crafted with love and dedication to the art of leatherworking
+                  Cada pieza está elaborada con amor y dedicación al arte del trabajo del cuero
                 </p>
               </div>
 
@@ -61,9 +61,9 @@ const About = () => {
                 <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-primary/10 mb-4">
                   <Award className="h-8 w-8 text-primary" />
                 </div>
-                <h3 className="font-serif text-xl font-semibold mb-2">Quality</h3>
+                <h3 className="font-serif text-xl font-semibold mb-2">Calidad</h3>
                 <p className="text-muted-foreground">
-                  We use only premium materials and traditional techniques for lasting products
+                  Usamos solo materiales premium y técnicas tradicionales para productos duraderos
                 </p>
               </div>
 
@@ -71,9 +71,9 @@ const About = () => {
                 <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-primary/10 mb-4">
                   <Sparkles className="h-8 w-8 text-primary" />
                 </div>
-                <h3 className="font-serif text-xl font-semibold mb-2">Authenticity</h3>
+                <h3 className="font-serif text-xl font-semibold mb-2">Autenticidad</h3>
                 <p className="text-muted-foreground">
-                  True to Western traditions while embracing modern design excellence
+                  Fieles a las tradiciones occidentales mientras abrazamos la excelencia del diseño moderno
                 </p>
               </div>
             </div>

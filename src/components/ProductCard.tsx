@@ -33,7 +33,7 @@ const ProductCard = ({ name, price, image, category }: ProductCardProps) => {
         </div>
         <Button className="w-full bg-primary hover:bg-primary/90 text-primary-foreground">
           <ShoppingBag className="mr-2 h-4 w-4" />
-          Add to Cart
+          Agregar al Carrito
         </Button>
       </CardFooter>
     </Card>

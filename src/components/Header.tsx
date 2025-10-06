@@ -7,11 +7,11 @@ const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const navigation = [
-    { name: "Home", href: "/" },
-    { name: "Shop", href: "/shop" },
-    { name: "About", href: "/about" },
-    { name: "Craftsmanship", href: "/craftsmanship" },
-    { name: "Contact", href: "/contact" },
+    { name: "Inicio", href: "/" },
+    { name: "Tienda", href: "/shop" },
+    { name: "Nosotros", href: "/about" },
+    { name: "Artesanía", href: "/craftsmanship" },
+    { name: "Contacto", href: "/contact" },
   ];
 
   return (

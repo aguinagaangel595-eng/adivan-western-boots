@@ -16,33 +16,33 @@ const Footer = () => {
               </span>
             </Link>
             <p className="text-sm text-accent-foreground/80 max-w-sm">
-              Handcrafted leather goods combining Western tradition with modern craftsmanship. 
-              Each piece tells a story of authenticity and quality.
+              Artículos de cuero hechos a mano que combinan tradición occidental con artesanía moderna. 
+              Cada pieza cuenta una historia de autenticidad y calidad.
             </p>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h3 className="font-serif text-lg font-semibold mb-4">Quick Links</h3>
+            <h3 className="font-serif text-lg font-semibold mb-4">Enlaces Rápidos</h3>
             <ul className="space-y-2">
               <li>
                 <Link to="/shop" className="text-sm hover:text-secondary transition-colors">
-                  Shop
+                  Tienda
                 </Link>
               </li>
               <li>
                 <Link to="/about" className="text-sm hover:text-secondary transition-colors">
-                  About Us
+                  Nosotros
                 </Link>
               </li>
               <li>
                 <Link to="/craftsmanship" className="text-sm hover:text-secondary transition-colors">
-                  Craftsmanship
+                  Artesanía
                 </Link>
               </li>
               <li>
                 <Link to="/contact" className="text-sm hover:text-secondary transition-colors">
-                  Contact
+                  Contacto
                 </Link>
               </li>
             </ul>
@@ -50,7 +50,7 @@ const Footer = () => {
 
           {/* Social */}
           <div>
-            <h3 className="font-serif text-lg font-semibold mb-4">Connect</h3>
+            <h3 className="font-serif text-lg font-semibold mb-4">Conecta</h3>
             <div className="flex space-x-4">
               <a
                 href="https://instagram.com"
@@ -85,13 +85,13 @@ const Footer = () => {
 
         <div className="mt-8 pt-8 border-t border-accent-foreground/20">
           <div className="flex flex-col md:flex-row justify-between items-center text-sm text-accent-foreground/80">
-            <p>&copy; {currentYear} ADIVAN. All rights reserved.</p>
+            <p>&copy; {currentYear} ADIVAN. Todos los derechos reservados.</p>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <Link to="/privacy" className="hover:text-secondary transition-colors">
-                Privacy Policy
+                Política de Privacidad
               </Link>
               <Link to="/terms" className="hover:text-secondary transition-colors">
-                Terms of Service
+                Términos de Servicio
               </Link>
             </div>
           </div>

@@ -13,23 +13,23 @@ import craftsmanshipImage from "@/assets/craftsmanship-hands.jpg";
 const featuredProducts = [
   {
     id: 1,
-    name: "Classic Leather Belt",
+    name: "Cinturón de Cuero Clásico",
     price: "$89",
-    category: "Belts",
+    category: "Cinturones",
     image: beltImage,
   },
   {
     id: 2,
-    name: "Premium Bifold Wallet",
+    name: "Cartera Premium Bifold",
     price: "$75",
-    category: "Wallets",
+    category: "Carteras",
     image: walletImage,
   },
   {
     id: 3,
-    name: "Messenger Bag",
+    name: "Bolso Mensajero",
     price: "$199",
-    category: "Bags",
+    category: "Bolsos",
     image: bagImage,
   },
 ];
@@ -46,10 +46,10 @@ const Index = () => {
           <div className="mx-auto max-w-7xl">
             <div className="text-center mb-12">
               <h2 className="font-serif text-3xl md:text-4xl font-bold text-foreground mb-4">
-                Featured Collection
+                Colección Destacada
               </h2>
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                Handpicked pieces that showcase our commitment to quality and craftsmanship
+                Piezas seleccionadas que demuestran nuestro compromiso con la calidad y artesanía
               </p>
             </div>
 
@@ -68,7 +68,7 @@ const Index = () => {
             <div className="text-center">
               <Button size="lg" asChild className="bg-primary hover:bg-primary/90">
                 <Link to="/shop">
-                  View All Products <ArrowRight className="ml-2 h-5 w-5" />
+                  Ver Todos los Productos <ArrowRight className="ml-2 h-5 w-5" />
                 </Link>
               </Button>
             </div>
@@ -81,20 +81,20 @@ const Index = () => {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div className="order-2 lg:order-1">
                 <h2 className="font-serif text-3xl md:text-4xl font-bold text-foreground mb-6">
-                  Crafted by Hand, Built to Last
+                  Hecho a Mano, Construido para Durar
                 </h2>
                 <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-                  Every ADIVAN product is meticulously handcrafted using traditional techniques 
-                  passed down through generations. We believe in the beauty of imperfection and 
-                  the strength of authentic materials.
+                  Cada producto ADIVAN está meticulosamente hecho a mano usando técnicas tradicionales 
+                  transmitidas de generación en generación. Creemos en la belleza de la imperfección y 
+                  la fortaleza de los materiales auténticos.
                 </p>
                 <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-                  Our leather goods develop a rich patina over time, making each piece uniquely 
-                  yours. This is more than just a product—it's a companion for life's journey.
+                  Nuestros artículos de cuero desarrollan una rica pátina con el tiempo, haciendo cada pieza 
+                  únicamente tuya. Esto es más que un producto—es un compañero para el viaje de la vida.
                 </p>
                 <Button size="lg" variant="outline" asChild>
                   <Link to="/craftsmanship">
-                    Discover Our Process <ArrowRight className="ml-2 h-5 w-5" />
+                    Descubre Nuestro Proceso <ArrowRight className="ml-2 h-5 w-5" />
                   </Link>
                 </Button>
               </div>
@@ -102,7 +102,7 @@ const Index = () => {
                 <div className="aspect-[4/3] overflow-hidden rounded-lg shadow-xl">
                   <img
                     src={craftsmanshipImage}
-                    alt="Leather craftsmanship"
+                    alt="Artesanía del cuero"
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -115,17 +115,17 @@ const Index = () => {
         <section className="py-20 px-4 sm:px-6 lg:px-8 bg-accent text-accent-foreground">
           <div className="mx-auto max-w-4xl text-center">
             <h2 className="font-serif text-3xl md:text-4xl font-bold mb-6">
-              Ready to Find Your Perfect Piece?
+              ¿Listo para Encontrar Tu Pieza Perfecta?
             </h2>
             <p className="text-lg mb-8 opacity-90">
-              Explore our collection of handcrafted leather goods or get in touch for custom orders
+              Explora nuestra colección de artículos de cuero hechos a mano o contáctanos para pedidos personalizados
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" asChild className="bg-primary hover:bg-primary/90">
-                <Link to="/shop">Shop Now</Link>
+                <Link to="/shop">Comprar Ahora</Link>
               </Button>
               <Button size="lg" variant="outline" asChild className="border-accent-foreground/30 hover:bg-accent-foreground/10">
-                <Link to="/contact">Contact Us</Link>
+                <Link to="/contact">Contáctanos</Link>
               </Button>
             </div>
           </div>

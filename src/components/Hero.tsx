@@ -18,10 +18,10 @@ const Hero = () => {
       
       <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
         <h1 className="font-serif text-5xl md:text-7xl font-bold text-white mb-6 tracking-tight text-balance">
-          Authenticity in Every Stitch
+          Autenticidad en Cada Puntada
         </h1>
         <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-2xl mx-auto text-balance">
-          Premium leather goods handcrafted with Western tradition and modern excellence
+          Artículos de cuero premium hechos a mano con tradición occidental y excelencia moderna
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Button 
@@ -30,7 +30,7 @@ const Hero = () => {
             className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8 py-6 text-lg"
           >
             <Link to="/shop">
-              Shop Collection <ArrowRight className="ml-2 h-5 w-5" />
+              Ver Colección <ArrowRight className="ml-2 h-5 w-5" />
             </Link>
           </Button>
           <Button 
@@ -39,7 +39,7 @@ const Hero = () => {
             asChild
             className="bg-white/10 backdrop-blur-sm border-white/30 text-white hover:bg-white/20 font-semibold px-8 py-6 text-lg"
           >
-            <Link to="/about">Our Story</Link>
+            <Link to="/about">Nuestra Historia</Link>
           </Button>
         </div>
       </div>
