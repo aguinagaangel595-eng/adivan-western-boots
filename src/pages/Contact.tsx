@@ -4,118 +4,168 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
-import { Mail, Phone, MapPin } from "lucide-react";
+import { MessageCircle, Mail, Phone } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import { useState } from "react";
-import contactImage from "@/assets/contact-image.jpg";
 
 const Contact = () => {
   const { toast } = useToast();
   const [formData, setFormData] = useState({
-    name: "", email: "", phone: "", type: "", message: "",
+    name: "",
+    email: "",
+    phone: "",
+    message: "",
   });
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    toast({ title: "¡Mensaje enviado!", description: "Te responderemos lo antes posible." });
-    setFormData({ name: "", email: "", phone: "", type: "", message: "" });
+    toast({
+      title: "¡Mensaje enviado!",
+      description: "Te responderemos lo antes posible.",
+    });
+    setFormData({ name: "", email: "", phone: "", message: "" });
+  };
+
+  const handleWhatsApp = () => {
+    window.open("https://wa.me/1234567890", "_blank");
   };
 
   return (
     <div className="flex flex-col min-h-screen">
       <Header />
-
+      
       <main className="flex-1">
-        {/* Hero */}
-        <section className="bg-[hsl(0,0%,5%)] py-20 px-4 sm:px-6 lg:px-8">
+        {/* Hero Section */}
+        <section className="bg-muted py-20 px-4 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-4xl text-center">
-            <h1 className="font-serif text-4xl md:text-6xl font-bold text-white mb-6">
-              Contacto
+            <h1 className="font-serif text-4xl md:text-6xl font-bold text-foreground mb-6">
+              Contáctanos
             </h1>
-            <p className="text-lg text-white/60">
-              Pedidos personalizados & mayoreo
+            <p className="text-xl text-muted-foreground">
+              ¿Tienes preguntas o estás interesado en pedidos personalizados? Nos encantaría saber de ti
             </p>
           </div>
         </section>
 
-        {/* Content */}
+        {/* Contact Content */}
         <section className="py-20 px-4 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-6xl">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-              {/* Left: Info */}
+              {/* Contact Information */}
               <div>
-                <div className="aspect-video overflow-hidden rounded-2xl shadow-xl mb-8">
-                  <img src={contactImage} alt="ADIVAN contacto" className="w-full h-full object-cover" />
+                <h2 className="font-serif text-3xl font-bold mb-8">Información de Contacto</h2>
+                
+                <div className="space-y-6">
+                  <div className="flex items-start space-x-4">
+                    <div className="flex-shrink-0">
+                      <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
+                        <MessageCircle className="h-6 w-6 text-primary" />
+                      </div>
+                    </div>
+                    <div>
+                      <h3 className="font-semibold mb-1">WhatsApp</h3>
+                      <p className="text-muted-foreground mb-2">
+                        Chatea con nosotros directamente para respuestas rápidas
+                      </p>
+                      <Button onClick={handleWhatsApp} variant="outline" size="sm">
+                        <MessageCircle className="mr-2 h-4 w-4" />
+                        Chatear Ahora
+                      </Button>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start space-x-4">
+                    <div className="flex-shrink-0">
+                      <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
+                        <Mail className="h-6 w-6 text-primary" />
+                      </div>
+                    </div>
+                    <div>
+                      <h3 className="font-semibold mb-1">Correo</h3>
+                      <p className="text-muted-foreground">info@adivan.com</p>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start space-x-4">
+                    <div className="flex-shrink-0">
+                      <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
+                        <Phone className="h-6 w-6 text-primary" />
+                      </div>
+                    </div>
+                    <div>
+                      <h3 className="font-semibold mb-1">Teléfono</h3>
+                      <p className="text-muted-foreground">+1 (234) 567-8900</p>
+                    </div>
+                  </div>
                 </div>
-                <p className="text-foreground leading-relaxed mb-8">
-                  ¿Buscas un cinturón con medidas especiales, una serie de carteras para regalo corporativo 
-                  o una línea exclusiva para tu tienda? Hablemos de lo que quieres crear con piel.
-                </p>
-                <div className="space-y-4">
-                  <div className="flex items-center gap-3">
-                    <Mail className="h-5 w-5 text-[hsl(35,45%,65%)]" />
-                    <span className="text-foreground">ventas@adivan.mx</span>
-                  </div>
-                  <div className="flex items-center gap-3">
-                    <Phone className="h-5 w-5 text-[hsl(35,45%,65%)]" />
-                    <span className="text-foreground">+52 (477) 787 1652</span>
-                  </div>
-                  <div className="flex items-center gap-3">
-                    <MapPin className="h-5 w-5 text-[hsl(35,45%,65%)]" />
-                    <span className="text-foreground">México · Envíos nacionales</span>
-                  </div>
+
+                <div className="mt-12 p-6 bg-muted rounded-lg">
+                  <h3 className="font-serif text-xl font-semibold mb-3">Pedidos Personalizados</h3>
+                  <p className="text-muted-foreground">
+                    ¿Buscas algo único? Ofrecemos trabajo en cuero personalizado adaptado a tus 
+                    especificaciones. Contáctanos para discutir tu visión y creemos algo 
+                    especial juntos.
+                  </p>
                 </div>
-                <p className="text-sm text-muted-foreground mt-6">
-                  También puedes escribirnos directamente por WhatsApp con un solo clic en el botón flotante.
-                </p>
               </div>
 
-              {/* Right: Form */}
-              <div className="bg-card border border-border rounded-2xl p-8 shadow-sm">
-                <h2 className="font-serif text-2xl font-bold mb-6">Cuéntanos tu idea</h2>
-                <form onSubmit={handleSubmit} className="space-y-5">
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              {/* Contact Form */}
+              <div>
+                <div className="bg-card border border-border rounded-lg p-8 shadow-sm">
+                  <h2 className="font-serif text-2xl font-bold mb-6">Envíanos un Mensaje</h2>
+                  
+                  <form onSubmit={handleSubmit} className="space-y-6">
                     <div>
-                      <Label htmlFor="name">Nombre completo</Label>
-                      <Input id="name" value={formData.name} onChange={(e) => setFormData({ ...formData, name: e.target.value })} placeholder="Tu nombre" required />
+                      <Label htmlFor="name">Nombre</Label>
+                      <Input
+                        id="name"
+                        value={formData.name}
+                        onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                        placeholder="Tu nombre"
+                        required
+                      />
                     </div>
+
                     <div>
-                      <Label htmlFor="email">Correo electrónico</Label>
-                      <Input id="email" type="email" value={formData.email} onChange={(e) => setFormData({ ...formData, email: e.target.value })} placeholder="correo@ejemplo.com" required />
+                      <Label htmlFor="email">Correo Electrónico</Label>
+                      <Input
+                        id="email"
+                        type="email"
+                        value={formData.email}
+                        onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                        placeholder="tu@correo.com"
+                        required
+                      />
                     </div>
-                  </div>
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                    <div>
-                      <Label htmlFor="type">Tipo de consulta</Label>
-                      <select
-                        id="type"
-                        value={formData.type}
-                        onChange={(e) => setFormData({ ...formData, type: e.target.value })}
-                        className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
-                      >
-                        <option value="">Elige una opción</option>
-                        <option value="personal">Pedido personal</option>
-                        <option value="mayoreo">Mayoreo</option>
-                        <option value="corporativo">Corporativo</option>
-                        <option value="otro">Otro</option>
-                      </select>
-                    </div>
+
                     <div>
                       <Label htmlFor="phone">Teléfono (opcional)</Label>
-                      <Input id="phone" type="tel" value={formData.phone} onChange={(e) => setFormData({ ...formData, phone: e.target.value })} placeholder="(###) ### ####" />
+                      <Input
+                        id="phone"
+                        type="tel"
+                        value={formData.phone}
+                        onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+                        placeholder="+1 (234) 567-8900"
+                      />
                     </div>
-                  </div>
-                  <div>
-                    <Label htmlFor="message">Mensaje</Label>
-                    <Textarea id="message" value={formData.message} onChange={(e) => setFormData({ ...formData, message: e.target.value })} placeholder="Comparte detalles de lo que estás buscando..." rows={5} required />
-                  </div>
-                  <Button type="submit" className="w-full rounded-full bg-primary hover:bg-primary/90 py-6">
-                    Enviar mensaje
-                  </Button>
-                  <p className="text-xs text-muted-foreground text-center">
-                    *Este formulario es de demostración. Aquí puedes conectar tu backend de correo o CRM.
-                  </p>
-                </form>
+
+                    <div>
+                      <Label htmlFor="message">Mensaje</Label>
+                      <Textarea
+                        id="message"
+                        value={formData.message}
+                        onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+                        placeholder="Cuéntanos sobre tu consulta o pedido personalizado..."
+                        rows={5}
+                        required
+                      />
+                    </div>
+
+                    <Button type="submit" className="w-full bg-primary hover:bg-primary/90">
+                      Enviar Mensaje
+                    </Button>
+                  </form>
+                </div>
               </div>
             </div>
           </div>

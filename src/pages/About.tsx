@@ -1,60 +1,80 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { Check } from "lucide-react";
-import aboutImage from "@/assets/about-image.jpg";
+import { Award, Heart, Sparkles } from "lucide-react";
 
 const About = () => {
   return (
     <div className="flex flex-col min-h-screen">
       <Header />
-
+      
       <main className="flex-1">
-        {/* Hero */}
-        <section className="bg-[hsl(0,0%,5%)] py-20 px-4 sm:px-6 lg:px-8">
+        {/* Hero Section */}
+        <section className="bg-muted py-20 px-4 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-4xl text-center">
-            <h1 className="font-serif text-4xl md:text-6xl font-bold text-white mb-6">
+            <h1 className="font-serif text-4xl md:text-6xl font-bold text-foreground mb-6">
               Nuestra Historia
             </h1>
-            <p className="text-lg text-white/60">
-              ADIVAN: donde la tradición se encuentra con lo moderno
+            <p className="text-xl text-muted-foreground">
+              Donde la tradición occidental se encuentra con la artesanía moderna
             </p>
           </div>
         </section>
 
-        {/* Content */}
-        <section className="py-20 px-4 sm:px-6 lg:px-8 bg-muted">
-          <div className="mx-auto max-w-6xl">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-              <div>
-                <div className="aspect-[4/5] overflow-hidden rounded-3xl shadow-xl">
-                  <img src={aboutImage} alt="Artesanía ADIVAN" className="w-full h-full object-cover" />
-                </div>
-              </div>
-              <div>
-                <p className="text-lg text-foreground leading-relaxed mb-6">
-                  ADIVAN nace de la pasión por la piel y la fuerza del estilo Western. Somos una marca mexicana 
-                  dedicada a transformar piel genuina en piezas que acompañan tu día a día, desde la ciudad hasta el campo.
-                </p>
-                <p className="text-lg text-foreground leading-relaxed mb-8">
-                  Cada cinturón, cartera, bolsa y accesorio es trabajado con detalle, respetando los procesos 
-                  artesanales y combinándolos con un diseño contemporáneo. No creemos en productos desechables: 
-                  creemos en piezas que se vuelven parte de tu historia.
-                </p>
+        {/* Story Content */}
+        <section className="py-20 px-4 sm:px-6 lg:px-8">
+          <div className="mx-auto max-w-4xl">
+            <div className="prose prose-lg max-w-none">
+              <p className="text-lg text-foreground leading-relaxed mb-6">
+                ADIVAN nació de una pasión por la artesanía auténtica del cuero y un profundo respeto 
+                por las tradiciones occidentales. Cada pieza que creamos cuenta una historia—una historia de dedicación, 
+                calidad y el atractivo atemporal de los artículos de cuero genuino.
+              </p>
+              
+              <p className="text-lg text-foreground leading-relaxed mb-6">
+                Nuestro viaje comenzó en un pequeño taller donde las técnicas tradicionales de trabajo del cuero 
+                se encontraron con sensibilidades de diseño moderno. Creemos que cada cinturón, cartera y bolso debe 
+                no solo cumplir su propósito sino también ser un testimonio de la habilidad del artesano y la 
+                belleza natural del material.
+              </p>
 
-                <ul className="space-y-3">
-                  {[
-                    "Piel seleccionada de alta calidad",
-                    "Hecho a mano en talleres especializados",
-                    "Diseño Western con sensibilidad moderna",
-                  ].map((item) => (
-                    <li key={item} className="flex items-center gap-3">
-                      <span className="flex-shrink-0 w-6 h-6 rounded-full bg-[hsl(35,45%,65%)] flex items-center justify-center">
-                        <Check className="h-4 w-4 text-[hsl(0,0%,5%)]" />
-                      </span>
-                      <span className="text-foreground">{item}</span>
-                    </li>
-                  ))}
-                </ul>
+              <p className="text-lg text-foreground leading-relaxed">
+                Hoy, ADIVAN se erige como un símbolo de calidad y autenticidad. Obtenemos solo el 
+                cuero más fino y empleamos técnicas consagradas para crear productos que envejecen 
+                bellamente y duran por generaciones. Esta es la artesanía del cuero en su máxima expresión—
+                donde cada puntada importa y cada detalle cuenta.
+              </p>
+            </div>
+
+            {/* Values */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
+              <div className="text-center">
+                <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-primary/10 mb-4">
+                  <Heart className="h-8 w-8 text-primary" />
+                </div>
+                <h3 className="font-serif text-xl font-semibold mb-2">Pasión</h3>
+                <p className="text-muted-foreground">
+                  Cada pieza está elaborada con amor y dedicación al arte del trabajo del cuero
+                </p>
+              </div>
+
+              <div className="text-center">
+                <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-primary/10 mb-4">
+                  <Award className="h-8 w-8 text-primary" />
+                </div>
+                <h3 className="font-serif text-xl font-semibold mb-2">Calidad</h3>
+                <p className="text-muted-foreground">
+                  Usamos solo materiales premium y técnicas tradicionales para productos duraderos
+                </p>
+              </div>
+
+              <div className="text-center">
+                <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-primary/10 mb-4">
+                  <Sparkles className="h-8 w-8 text-primary" />
+                </div>
+                <h3 className="font-serif text-xl font-semibold mb-2">Autenticidad</h3>
+                <p className="text-muted-foreground">
+                  Fieles a las tradiciones occidentales mientras abrazamos la excelencia del diseño moderno
+                </p>
               </div>
             </div>
           </div>
