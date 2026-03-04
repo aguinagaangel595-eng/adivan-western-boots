@@ -1,17 +1,17 @@
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
-import ProductCard from "@/components/ProductCard";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+import ProductCard from "../components/ProductCard";
 import { useState } from "react";
 
-import beltWestern from "@/assets/product-belt-western.png";
-import beltBlack from "@/assets/product-belt-black.jpg";
-import walletClassic from "@/assets/product-wallet-classic.png";
-import walletSlim from "@/assets/product-wallet-slim.jpg";
-import bagCrossbody from "@/assets/product-bag-crossbody.png";
-import bagShopper from "@/assets/product-bag-shopper.jpg";
-import beltImage from "@/assets/product-belt.jpg";
-import walletImage from "@/assets/product-wallet.jpg";
-import bagImage from "@/assets/product-bag.jpg";
+import beltWestern from "../assets/product-belt-western.png";
+import beltBlack from "../assets/product-belt-black.jpg";
+import walletClassic from "../assets/product-wallet-classic.png";
+import walletSlim from "../assets/product-wallet-slim.jpg";
+import bagCrossbody from "../assets/product-bag-crossbody.png";
+import bagShopper from "../assets/product-bag-shopper.jpg";
+import beltImage from "../assets/product-belt.jpg";
+import walletImage from "../assets/product-wallet.jpg";
+import bagImage from "../assets/product-bag.jpg";
 
 const products = [
   { id: 1, name: "Cinturón Western", price: 1299, category: "Cinturones", image: beltWestern, description: "Cinturón de piel café con hebilla metálica y acabado rústico moderno." },
